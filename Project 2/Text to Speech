@@ -1,1 +1,10 @@
+from gtts import gTTS # for text to speech conversion
+
+text= "Hello Guys. How are you. All Fine ?"  #text which I want to convert
+
+language = 'en' # English language
+
+obj = gTTS(text= text, lang=language,slow=False)  #slow=False means Converted video will have a high speed
+
+obj.save("sample.mp3")
 
